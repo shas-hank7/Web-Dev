@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="PaymentForm.css">
+</head>
+
+<body>
+    <div class="container">    
+        <form action="">
+            <h1 class="mainHeading">Payment Gateway</h1>
+            * marked are mandatory
+            <h2>Contact Information</h2>
+            Name: *<input type="text" name="name" id="name" placeholder="Shashank Singh" required><br><br>
+            <fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+                Others <input type="radio" name="gender" id="others" required>
+            </fieldset> <br>
+            Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your Address"></textarea><br><br>
+            Email: <input type="email" name="email" id="email" required placeholder="abc@xyz.com"><br><br>
+            Pincode: <input type="number" name="pincode" id="pincode" required placeholder="123456"> <br> <br>
+            <hr>
+            <h2>Payment Details</h2>
+            Card Type: <select name="card_type" id="card_type" required>
+                <option value="">--Select A Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Master Card</option>
+                <option value="rupay">Rupay</option>
+            </select><br> <br>
+            Card Number: <input type="number" name="cardnumber" value="cardnumber" placeholder="1111-2222-3333-4444" required><br><br>
+            Card Expiration Date: <input type="date" name="date" value="date" required><br><br>
+            CVV: <input type="password" name="cvv" id="cvv" placeholder="123" required><br><br>
+            <input type="submit" value="Pay Now">
+
+        </form>
+    </div>
+</body>
+
+</html>
